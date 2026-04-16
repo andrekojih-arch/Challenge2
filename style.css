@@ -1,0 +1,512 @@
+:root {
+  --azul-principal: #0d6efd;
+  --azul-escuro: #0b3d91;
+  --azul-claro: #eef5ff;
+  --cinza-fundo: #f7f9fc;
+  --cinza-texto: #5f6b7a;
+  --branco: #ffffff;
+  --verde: #198754;
+  --amarelo: #f4b400;
+  --cinza-borda: #e5e7eb;
+  --sombra: 0 12px 30px rgba(13, 110, 253, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--cinza-fundo);
+  color: #1f2937;
+}
+
+.menu-site {
+  background: linear-gradient(90deg, var(--azul-principal), var(--azul-escuro));
+  padding: 14px 0;
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.92) !important;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+}
+
+.botao-menu {
+  background-color: #ffffff;
+  color: var(--azul-principal);
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.botao-menu:hover {
+  background-color: #e6f0ff;
+  color: var(--azul-principal);
+  transform: translateY(-1px);
+}
+
+.parte-inicial {
+  padding: 100px 0 90px;
+  background: linear-gradient(180deg, #eef5ff 0%, #ffffff 100%);
+}
+
+.aviso-challenge,
+.etiqueta-secao,
+.tag-video {
+  background-color: #dbeafe;
+  color: var(--azul-principal);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.titulo-home {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #102a43;
+  line-height: 1.1;
+}
+
+.texto-home {
+  font-size: 1.1rem;
+  color: var(--cinza-texto);
+  max-width: 570px;
+}
+
+.lista-home li {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #243b53;
+}
+
+.lista-home i {
+  color: var(--azul-principal);
+  margin-right: 10px;
+}
+
+.caixa-resumo,
+.bloco-info,
+.quadro-jornada,
+.bloco-conteudo,
+.caixa-premio,
+.mensagem-final {
+  background-color: var(--branco);
+  border-radius: 24px;
+  box-shadow: var(--sombra);
+}
+
+.caixa-resumo {
+  padding: 32px;
+}
+
+.item-resumo {
+  background-color: #f8fbff;
+  border: 1px solid #e6eefc;
+  border-radius: 18px;
+  padding: 18px;
+  height: 100%;
+}
+
+.item-resumo small {
+  display: block;
+  color: var(--cinza-texto);
+  margin-bottom: 6px;
+}
+
+.item-resumo strong {
+  font-size: 1.05rem;
+  color: #102a43;
+}
+
+.secao-site {
+  padding: 90px 0;
+}
+
+.secao-azul {
+  background-color: var(--azul-claro);
+}
+
+.titulo-secao {
+  margin-bottom: 48px;
+}
+
+.titulo-secao h2 {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #102a43;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+
+.titulo-secao p {
+  color: var(--cinza-texto);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.bloco-info {
+  padding: 28px;
+  height: 100%;
+}
+
+.bloco-info h5 {
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.bloco-info p {
+  color: #475569;
+}
+
+.icone-bloco {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+}
+
+.fundo-azul {
+  background-color: #dbeafe;
+  color: var(--azul-principal);
+}
+
+.fundo-amarelo {
+  background-color: #fff4d6;
+  color: var(--amarelo);
+}
+
+.fundo-verde {
+  background-color: #dcfce7;
+  color: var(--verde);
+}
+
+.valor-pontos {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: var(--azul-principal);
+  margin-bottom: 8px;
+}
+
+.atalho-dashboard {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--branco);
+  color: #1e293b;
+  text-decoration: none;
+  padding: 22px;
+  border-radius: 20px;
+  box-shadow: var(--sombra);
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.atalho-dashboard i {
+  font-size: 1.3rem;
+  color: var(--azul-principal);
+}
+
+.atalho-dashboard:hover {
+  transform: translateY(-4px);
+  color: #1e293b;
+}
+
+.quadro-jornada {
+  padding: 34px 26px;
+}
+
+.linha-jornada {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  overflow-x: auto;
+}
+
+.item-jornada {
+  min-width: 120px;
+  text-align: center;
+}
+
+.item-jornada h6 {
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.item-jornada small {
+  color: var(--cinza-texto);
+}
+
+.icone-jornada {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--branco);
+  font-size: 1.5rem;
+}
+
+.barra-jornada {
+  width: 48px;
+  height: 6px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.done .icone-jornada,
+.barra-jornada.done {
+  background-color: var(--verde);
+}
+
+.active .icone-jornada,
+.barra-jornada.active {
+  background-color: var(--azul-principal);
+}
+
+.locked .icone-jornada,
+.barra-jornada.locked {
+  background-color: #9ca3af;
+}
+
+.reward .icone-jornada {
+  background-color: var(--amarelo);
+}
+
+.bloco-conteudo {
+  overflow: hidden;
+}
+
+.caixa-video {
+  height: 280px;
+  background: linear-gradient(135deg, #dbeafe, #c7dfff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caixa-video i {
+  font-size: 6rem;
+  color: var(--azul-principal);
+}
+
+.quadro-consulta {
+  background-color: #f8fbff;
+  border: 1px solid #e4ecf9;
+  border-radius: 18px;
+  padding: 20px;
+  height: 100%;
+}
+
+.quadro-consulta h5 {
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.item-horario {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  border: 1px solid var(--cinza-borda);
+  border-radius: 16px;
+  margin-bottom: 12px;
+  background-color: #fcfdff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.item-horario:hover {
+  border-color: var(--azul-principal);
+  background-color: #f5f9ff;
+}
+
+.caixa-premio {
+  padding: 28px;
+  height: 100%;
+}
+
+.caixa-premio h4,
+.caixa-premio h5 {
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.simbolo-premio {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fff4d6, #fde68a);
+  color: var(--amarelo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.3rem;
+  margin: 0 auto 18px;
+}
+
+.lista-premios {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.lista-premios li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eef2f7;
+  color: #475569;
+}
+
+.secao-final {
+  background: linear-gradient(180deg, #ffffff 0%, #eefbf3 100%);
+}
+
+.mensagem-final {
+  padding: 50px 30px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.simbolo-final {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  color: var(--verde);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.7rem;
+}
+
+.mensagem-final h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #102a43;
+  margin-bottom: 14px;
+}
+
+.mensagem-final p {
+  color: #475569;
+  font-size: 1.05rem;
+}
+
+.rodape {
+  background-color: var(--azul-escuro);
+  color: rgba(255, 255, 255, 0.92);
+  padding: 28px 0;
+}
+
+.area-ajuda {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.mensagem-ajuda {
+  display: none;
+  max-width: 290px;
+  background-color: var(--branco);
+  color: #334155;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.14);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  border: 1px solid #dbeafe;
+}
+
+.botao-ajuda {
+  width: 65px;
+  height: 65px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(13, 110, 253, 0.2);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.botao-ajuda:hover {
+  transform: scale(1.08);
+}
+
+.botao-ajuda img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+@media (max-width: 992px) {
+  .titulo-home {
+    font-size: 2.4rem;
+  }
+
+  .linha-jornada {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .parte-inicial {
+    padding: 70px 0;
+  }
+
+  .secao-site {
+    padding: 70px 0;
+  }
+
+  .titulo-secao h2 {
+    font-size: 1.7rem;
+  }
+
+  .caixa-video {
+    height: 220px;
+  }
+
+  .botao-ajuda {
+    width: 60px;
+    height: 60px;
+  }
+
+  .botao-ajuda img {
+    width: 34px;
+    height: 34px;
+  }
+}
